@@ -1,5 +1,5 @@
 build:
-	DOCKER_BUILDKIT=1 docker build --tag department-service .
+	DOCKER_BUILDKIT=1 docker build --tag office-service .
 
 run:
 	docker run --name office-container -d -p 8084:80 office-service:latest

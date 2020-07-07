@@ -1,7 +1,10 @@
+
 from bryandollery/maven-repo as build
 
 arg rebuile 
-
+#
+#Copy files
+#
 COPY src /home/app/src
 COPY pom.xml /home/app
 RUN mvn -f /home/app/pom.xml clean package
