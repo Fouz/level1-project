@@ -1,5 +1,5 @@
 build:
-	 dDOCKER_BUILDKIT=1 docker build --tag person-service .
+	 DOCKER_BUILDKIT=1 docker build --tag person-service .
 run:
 	docker run --name person-container -d -p 8081:80 person-service:latest
 
