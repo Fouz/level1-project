@@ -2,31 +2,31 @@ version: '3.3'
 services:
   department-service:
     container_name: department-container
-    image: bhanbashi/department-service
+    image: fatimahobaidan/department-service
     build: ./department-service
     ports:
       - "8083:80"
   project-assessment-site:
-    container_name: project-assessment-site-container
-    image: bhanbashi/project-assessment-site/public
+    container_name: project-container
+    image: fatimahobaidan/project-assessment-site/public
     build: ./project-assessment-site/public
     ports: 
       - "80:80"
   office-service:
     container_name: office-container
-    image: bhanbashi/office-service
+    image: fatimahobaidan/office-service
     build: ./office-service
     ports:
       - "8084:80"
   person-service:
     container_name: person-container
-    image: bhanbashi/person-service
+    image: fatimahobaidan/person-service
     build: ./person-service
     ports:
       - "8081:80"
   role-service:
     container_name: role-container
-    image: bhanbashi/role-service
+    image: fatimahobaidan/role-service
     build: ./role-service
     ports:
       - "8082:80"
