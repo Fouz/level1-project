@@ -1,27 +1,20 @@
 build:
-<<<<<<< HEAD
 	 dDOCKER_BUILDKIT=1 docker build --tag person-service .
-=======
-	 DOCKER_BUILDKIT=1 docker build --tag person-service .
->>>>>>> 67b28efbe018e5b6ba8a4be4b7795ee8b3dd6b82
 run:
 	docker run --name person-container -d -p 8081:80 person-service:latest
 
 join:
-	docker exec -it person-service sh
+	docker exec -it person-container sh
 
 logs:
-	docker logs person-service
+	docker logs person-container
 
 follow:
-	docker logs -f person-service
+	docker logs -f person-container
 
 stop:
-	docker stop person-service
+	docker stop person-container
 
 clean:
-	docker rm person-service
-<<<<<<< HEAD
-=======
+	docker rm person-container
 
->>>>>>> 67b28efbe018e5b6ba8a4be4b7795ee8b3dd6b82
